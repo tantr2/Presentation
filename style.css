@@ -15,7 +15,8 @@
   --line:          #DEDBD3;
   --accent:        #3C5A78;     /* muted aerospace blue */
   --accent-soft:   rgba(60, 90, 120, 0.10);
-  --accent-line:   rgba(60, 90, 120, 0.35);
+  --accent-line:   rgba(255, 255, 255, 0.35);  /* decorative lines/fills on photos */
+  --accent-text:   #CFE0EE;     /* solid, legible accent text on dark/photo slides */
 
   --font-display:  'IBM Plex Sans', -apple-system, sans-serif;
   --font-mono:     'IBM Plex Mono', ui-monospace, monospace;
