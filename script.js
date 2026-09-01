@@ -112,9 +112,18 @@
   }
 
   // -------------------------------------------------------------
-  // Init
+  // Init — activate slide 1 the same way goTo() does, so its
+  // opacity/transform transitions actually have a state change
+  // to animate from (a class present at parse time never fires
+  // a CSS transition, since there was no prior state to move from).
   // -------------------------------------------------------------
   indexLabel.textContent = pad(1) + ' / ' + pad(total);
   const firstIsDark = slides[0].dataset.dark === 'true';
   deck.setAttribute('data-dark-active', firstIsDark ? 'true' : 'false');
+
+  requestAnimationFrame(() => {
+    slides[0].classList.remove('is-active');
+    void slides[0].offsetWidth;
+    slides[0].classList.add('is-active');
+  });
 })();
