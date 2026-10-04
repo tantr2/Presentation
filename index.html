@@ -2,202 +2,382 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Asteria - Nuclear Thermal Propulsion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#070908" />
+  <meta name="description" content="Asteria — Nuclear Thermal Propulsion" />
+  <title>Asteria — Nuclear Thermal Propulsion</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main id="deck" aria-live="polite">
-    <section class="slide hero" data-title="Asteria">
-      <img class="bg" src="assets/p02_00.png" alt="Nuclear thermal propulsion spacecraft above Earth" />
-      <div class="shade"></div>
-      <div class="content top-left">
-        <p class="kicker">Asteria</p>
-        <h1>Nuclear Thermal<br>Propulsion</h1>
-        <p class="sub">A faster, more propellant-efficient path for deep-space transport.</p>
+
+    <!-- 01 — visual cold open -->
+    <section class="slide opening" data-title="Asteria" aria-label="Asteria opening image">
+      <img class="bg bg-contain" src="assets/p01_00.png" alt="Earth seen from a spacecraft window" />
+      <div class="opening-vignette"></div>
+      <div class="micro-brand" aria-hidden="true">ASTERIA / NTP</div>
+    </section>
+
+    <!-- 02 — title -->
+    <section class="slide hero" data-title="Nuclear Thermal Propulsion">
+      <div class="content hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Asteria</p>
+          <h1>Nuclear Thermal<br>Propulsion</h1>
+          <div class="hairline"></div>
+          <p class="sub">A faster, more propellant-efficient path for deep-space transport.</p>
+        </div>
+        <div class="hero-art art-well">
+          <img src="assets/p02_00.png" alt="Nuclear thermal propulsion spacecraft above Earth" />
+        </div>
       </div>
     </section>
 
+    <!-- 03 — comparison -->
     <section class="slide comparison" data-title="2x Conventional = NTP">
       <div class="content">
-        <h2><span>2x Conventional</span><br>Propulsion</h2>
-        <div class="equation-grid">
-          <div class="rocket-pair">
+        <div class="section-head">
+          <p class="eyebrow">The proposition</p>
+          <h2><span>2x conventional</span> propulsion <i>=</i> NTP</h2>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="rocket-pair visual-group">
             <img src="assets/p03_01.png" alt="Conventional rocket launching" />
             <img src="assets/p03_01.png" alt="Conventional rocket launching" />
+            <p>Conventional</p>
           </div>
-          <div class="equals">=</div>
-          <div class="ntp-card">
-            <p>NTP</p>
+
+          <div class="quiet-equals" aria-hidden="true">=</div>
+
+          <div class="ntp-card visual-group">
             <img src="assets/p03_00.png" alt="Nuclear thermal propulsion spacecraft" />
+            <p>NTP</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- 04 — fuel problem -->
     <section class="slide split" data-title="Rocket fuel problem">
       <div class="content">
-        <div class="split-labels"><span>Car</span><span>Rocket</span></div>
+        <div class="section-head centered">
+          <p class="eyebrow">The mass problem</p>
+          <h2>Need fuel <span>to carry the fuel.</span></h2>
+        </div>
+
         <div class="split-visuals">
-          <img src="assets/p04_00.png" alt="Car carrying fuel" />
-          <img src="assets/p04_01.png" alt="Rocket launch" />
+          <figure>
+            <figcaption>Car</figcaption>
+            <div class="image-zone"><img src="assets/p04_00.png" alt="Car carrying fuel" /></div>
+          </figure>
+          <div class="split-rule" aria-hidden="true"></div>
+          <figure>
+            <figcaption>Rocket</figcaption>
+            <div class="image-zone"><img src="assets/p04_01.png" alt="Rocket launch" /></div>
+          </figure>
         </div>
-        <h2 class="center-message">Need fuel<br><span>to carry the fuel</span></h2>
       </div>
     </section>
 
-    <section class="slide process" data-title="Propellant tank to rocket">
+    <!-- 05 — propellant tank -->
+    <section class="slide process" data-title="Propellant tank to chemical rocket">
       <div class="content">
-        <div class="two-col-title"><h2>Propellant Tank</h2><h2>Chemical Rocket</h2></div>
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">Chemical propulsion</p>
+          <h2>More propellant becomes more vehicle.</h2>
+        </div>
+
         <div class="flow-row">
-          <figure><img src="assets/p05_01.png" alt="Large propellant tank" /></figure>
-          <div class="arrow">→</div>
-          <figure><img src="assets/p05_00.png" alt="Chemical rocket on launch pad" /></figure>
+          <figure>
+            <p class="visual-label">Propellant tank</p>
+            <div class="image-zone tall"><img src="assets/p05_01.png" alt="Large propellant tank" /></div>
+          </figure>
+
+          <div class="flow-arrow" aria-hidden="true"><span></span></div>
+
+          <figure>
+            <p class="visual-label">Chemical rocket</p>
+            <div class="image-zone tall"><img src="assets/p05_00.png" alt="Chemical rocket on launch pad" /></div>
+          </figure>
         </div>
       </div>
     </section>
 
+    <!-- 06 — question -->
     <section class="slide question" data-title="Key question">
-      <div class="orb"></div>
+      <div class="planet-orb" aria-hidden="true"></div>
       <div class="content quote-block">
-        <p class="kicker">Mission question</p>
+        <p class="eyebrow">Mission question</p>
         <h2>“Can chemical rockets reach Mars?”</h2>
+        <div class="quote-divider"></div>
         <h3>“Can we make deep-space transport less dominated by propellant?”</h3>
       </div>
     </section>
 
+    <!-- 07 — heat sources -->
     <section class="slide heat-sources" data-title="Different heat sources">
       <div class="content">
-        <h2>Same nozzle. <span>Different heat sources.</span></h2>
-        <div class="heat-grid">
-          <div class="heat-row"><h3>Chemical</h3><div class="flame">🔥</div><div class="mini-arrow">→</div><p>hot gas</p></div>
-          <div class="heat-row"><h3>Nuclear thermal</h3><img src="assets/p08_01.png" alt="Nuclear reactor diagram" /><div class="mini-arrow">→</div><p>hot hydrogen</p></div>
-          <img class="nozzle" src="assets/p08_00.png" alt="Rocket nozzle" />
+        <div class="section-head">
+          <p class="eyebrow">Same nozzle</p>
+          <h2>Different heat sources.</h2>
         </div>
+
+        <div class="heat-layout">
+          <div class="heat-stack">
+            <article class="heat-row chemical-row">
+              <div class="heat-name"><span class="dot cyan"></span><h3>Chemical</h3></div>
+              <img class="heat-icon" src="assets/p08_02.png" alt="Combustion flame" />
+              <div class="thin-arrow" aria-hidden="true"></div>
+              <p>hot gas</p>
+            </article>
+
+            <article class="heat-row nuclear-row">
+              <div class="heat-name"><span class="dot mint"></span><h3>Nuclear thermal</h3></div>
+              <img class="heat-icon reactor" src="assets/p08_01.png" alt="Nuclear reactor diagram" />
+              <div class="thin-arrow" aria-hidden="true"></div>
+              <p>hot hydrogen</p>
+            </article>
+          </div>
+
+          <div class="nozzle-zone">
+            <img class="nozzle" src="assets/p08_00.png" alt="Rocket nozzle" />
+            <p>nozzle</p>
+          </div>
+        </div>
+
         <p class="source">Source: U.S. Department of Energy</p>
       </div>
     </section>
 
+    <!-- 08 — efficiency -->
     <section class="slide efficiency" data-title="2x propellant efficiency">
       <div class="content">
-        <h2>2x Propellant<br>Efficiency</h2>
-        <div class="eff-row">
-          <div class="eff-item"><img src="assets/p09_00.png" alt="Chemical rocket" /><p>450 seconds of<br>specific impulse</p></div>
-          <div class="pulse-line"></div>
-          <div class="eff-item"><img src="assets/p09_01.png" alt="Nuclear thermal spacecraft" /><p>900 seconds of<br>specific impulse</p></div>
+        <div class="section-head centered">
+          <p class="eyebrow">Specific impulse</p>
+          <h2><span>2×</span> propellant efficiency</h2>
         </div>
+
+        <div class="eff-row">
+          <article class="eff-item">
+            <div class="metric">450 <small>s</small></div>
+            <div class="image-zone"><img src="assets/p09_00.png" alt="Chemical rocket" /></div>
+            <p>Chemical</p>
+          </article>
+
+          <div class="eff-bridge" aria-hidden="true"><span>→</span></div>
+
+          <article class="eff-item highlight">
+            <div class="metric">900 <small>s</small></div>
+            <div class="image-zone"><img src="assets/p09_01.png" alt="Nuclear thermal spacecraft" /></div>
+            <p>Nuclear thermal</p>
+          </article>
+        </div>
+
         <p class="source">Source: U.S. Department of Energy</p>
       </div>
     </section>
 
+    <!-- 09 — thrust / efficiency chart -->
     <section class="slide chart" data-title="High thrust and efficiency">
       <div class="content">
-        <h2>High thrust + high efficiency</h2>
-        <div class="axis-box">
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">Performance space</p>
+          <h2>High thrust + high efficiency</h2>
+        </div>
+
+        <div class="axis-box" role="img" aria-label="Chart comparing chemical, electric, and nuclear thermal propulsion by thrust and propellant efficiency">
+          <div class="axis-y"></div>
+          <div class="axis-x"></div>
           <div class="y-label">Thrust</div>
           <div class="x-label">Propellant efficiency</div>
-          <div class="axis-y"></div><div class="axis-x"></div>
-          <div class="point chemical">Chemical</div>
-          <div class="point ntp">NTP</div>
-          <div class="point electric">Electric</div>
+
+          <div class="plot-point chemical"><span></span><p>Chemical</p></div>
+          <div class="plot-point ntp"><span></span><p>NTP</p></div>
+          <div class="plot-point electric"><span></span><p>Electric</p></div>
         </div>
+
         <p class="source">Source: NASA</p>
       </div>
     </section>
 
+    <!-- 10 — options -->
     <section class="slide options" data-title="Better engine, more options">
       <div class="content">
-        <h2>Better engine. More options.</h2>
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">Mission flexibility</p>
+          <h2>Better engine. More options.</h2>
+        </div>
+
         <img class="center-engine" src="assets/p12_02.png" alt="Asteria spacecraft" />
+
         <div class="option-row">
-          <div><img src="assets/p12_03.png" alt="Payload crate" /><p>Payload</p></div>
-          <div><img src="assets/p12_00.png" alt="Clock" /><p>Time</p></div>
-          <div><img src="assets/p12_01.png" alt="Margin icon" /><p>Margin</p></div>
+          <article>
+            <div class="option-icon"><img src="assets/p12_03.png" alt="Payload crate" /></div>
+            <p>Payload</p>
+          </article>
+          <article>
+            <div class="option-icon"><img src="assets/p12_00.png" alt="Clock" /></div>
+            <p>Time</p>
+          </article>
+          <article>
+            <div class="option-icon"><img src="assets/p12_01.png" alt="Margin icon" /></div>
+            <p>Margin</p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- 11 — mission architecture -->
     <section class="slide mission" data-title="Launch Transfer Destination">
       <div class="content">
-        <h2>Launch → Transfer → Destination</h2>
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">Mission architecture</p>
+          <h2>Launch <span>→</span> Transfer <span>→</span> Destination</h2>
+        </div>
+
         <img class="planet earth" src="assets/p13_00.png" alt="Earth" />
         <img class="planet moon" src="assets/p13_01.png" alt="Moon" />
+        <div class="transfer-track" aria-hidden="true"></div>
+        <img class="transfer-flame" src="assets/p13_02.png" alt="" />
         <img class="ship" src="assets/p13_03.png" alt="Asteria spacecraft in transfer" />
         <p class="ship-label">Asteria</p>
       </div>
     </section>
 
+    <!-- 12 — timeline -->
     <section class="slide timeline" data-title="From old tests to new hardware">
       <div class="content">
-        <h2>From old tests to new hardware</h2>
-        <div class="timeline-grid">
-          <article><p class="year">1960s-70s</p><img src="assets/p14_00.png" alt="Rover/NERVA testing" /><h3>Rover/NERVA testing</h3></article>
-          <article><p class="year">2025</p><img src="assets/p14_02.png" alt="Modern reactor work" /><h3>modern industry/<br>reactor work continues</h3></article>
-          <article><p class="year">2026</p><img src="assets/p14_01.png" alt="Cold-flow hardware test" /><h3>flight-like cold-flow<br>hardware tested</h3></article>
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">Development path</p>
+          <h2>From old tests to new hardware</h2>
         </div>
+
+        <div class="timeline-line" aria-hidden="true"></div>
+        <div class="timeline-grid">
+          <article>
+            <p class="year">1960s–70s</p>
+            <div class="image-zone"><img src="assets/p14_00.png" alt="Rover/NERVA testing" /></div>
+            <h3>Rover/NERVA testing</h3>
+          </article>
+
+          <article>
+            <p class="year">2025</p>
+            <div class="image-zone"><img src="assets/p14_02.png" alt="Modern reactor work" /></div>
+            <h3>modern industry/<br>reactor work continues</h3>
+          </article>
+
+          <article>
+            <p class="year">2026</p>
+            <div class="image-zone"><img src="assets/p14_01.png" alt="Cold-flow hardware test" /></div>
+            <h3>flight-like cold-flow<br>hardware tested</h3>
+          </article>
+        </div>
+
         <p class="source">Source: NASA</p>
       </div>
     </section>
 
+    <!-- 13 — hard problems -->
     <section class="slide problems" data-title="Three hard problems">
       <div class="content">
-        <h2>Three hard problems</h2>
-        <div class="problem-row">
-          <div><img src="assets/p16_02.png" alt="Hot rocket engine hardware" /><p>Heat</p></div>
-          <div><img src="assets/p16_01.png" alt="Hydrogen storage tanks" /><p>Hydrogen</p></div>
-          <div><img src="assets/p16_00.png" alt="Qualification documents" /><p>Qualification</p></div>
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">What still has to work</p>
+          <h2>Three hard problems</h2>
         </div>
+
+        <div class="problem-row">
+          <article>
+            <div class="problem-number">01</div>
+            <div class="image-zone"><img src="assets/p16_02.png" alt="Hot rocket engine hardware" /></div>
+            <p>Heat</p>
+          </article>
+          <article>
+            <div class="problem-number">02</div>
+            <div class="image-zone"><img src="assets/p16_01.png" alt="Hydrogen storage tanks" /></div>
+            <p>Hydrogen</p>
+          </article>
+          <article>
+            <div class="problem-number">03</div>
+            <div class="image-zone"><img src="assets/p16_00.png" alt="Qualification documents" /></div>
+            <p>Qualification</p>
+          </article>
+        </div>
+
         <p class="source">Source: NASA</p>
       </div>
     </section>
 
+    <!-- 14 — activation -->
     <section class="slide activation" data-title="Launch chemical activate in space">
       <div class="content">
-        <h2>“Launch chemical. Activate in space.”</h2>
-        <div class="activation-row">
-          <figure><img src="assets/p17_00.png" alt="Rocket launching from Earth" /><figcaption>Reactor off</figcaption></figure>
-          <figure><img src="assets/p17_01.png" alt="Nuclear thermal spacecraft operating in space" /><figcaption>Reactor on</figcaption></figure>
+        <div class="section-head centered compact-head">
+          <p class="eyebrow">Operational concept</p>
+          <h2>“Launch chemical. Activate in space.”</h2>
         </div>
+
+        <div class="activation-row">
+          <figure>
+            <div class="image-zone"><img src="assets/p17_00.png" alt="Rocket launching from Earth" /></div>
+            <figcaption><span class="status-dot off"></span>Reactor off</figcaption>
+          </figure>
+
+          <div class="activation-arrow" aria-hidden="true">→</div>
+
+          <figure>
+            <div class="image-zone"><img src="assets/p17_01.png" alt="Nuclear thermal spacecraft operating in space" /></div>
+            <figcaption><span class="status-dot on"></span>Reactor on</figcaption>
+          </figure>
+        </div>
+
         <p class="source">Source: NASA</p>
       </div>
     </section>
 
+    <!-- 15 — close -->
     <section class="slide closing" data-title="Make deep space repeatable">
       <img class="bg" src="assets/p18_00.png" alt="View of Earth, Mars, and the Moon from a spacecraft window" />
-      <div class="shade right"></div>
+      <div class="closing-shade"></div>
+      <img class="closing-ship" src="assets/p18_01.png" alt="Asteria spacecraft" />
       <div class="content end-message">
-        <h2>Make deep space repeatable</h2>
-        <p>with <span>Asteria</span></p>
+        <p class="eyebrow">Asteria</p>
+        <h2>Make deep space<br>repeatable.</h2>
       </div>
     </section>
 
+    <!-- 16 — references -->
     <section class="slide references" data-title="References">
-      <div class="content">
-        <p class="kicker">References</p>
-        <h2>Source material</h2>
+      <div class="content references-layout">
+        <div class="references-head">
+          <p class="eyebrow">References</p>
+          <h2>Source material</h2>
+        </div>
         <ol>
           <li>NASA. (2026). <em>Space Nuclear Propulsion.</em></li>
           <li>U.S. Department of Energy. (2025). <em>6 Things You Should Know About Nuclear Thermal Propulsion.</em></li>
           <li>NASA. (2026). <em>NASA Testing Advances Space Nuclear Propulsion Capabilities.</em></li>
-          <li>NASA. (2023). <em>Space Nuclear Propulsion - NASA Advisory Council Briefing.</em></li>
+          <li>NASA. (2023). <em>Space Nuclear Propulsion — NASA Advisory Council Briefing.</em></li>
           <li>National Academies of Sciences, Engineering, and Medicine. (2021). <em>Space Nuclear Propulsion for Human Mars Exploration.</em></li>
-          <li>U.S. Government Accountability Office. (2025). <em>NASA: Assessments of Major Projects - DRACO.</em></li>
+          <li>U.S. Government Accountability Office. (2025). <em>NASA: Assessments of Major Projects — DRACO.</em></li>
           <li>NASA Office of Safety and Mission Assurance. (2026). <em>Nuclear Flight Safety.</em></li>
         </ol>
       </div>
     </section>
   </main>
 
-  <div class="hud">
-    <button id="prev" aria-label="Previous slide">‹</button>
-    <div class="progress"><span id="bar"></span></div>
-    <span id="counter">1 / 15</span>
-    <button id="next" aria-label="Next slide">›</button>
-  </div>
-  <button id="fullscreen" class="fullscreen" aria-label="Toggle fullscreen">⛶</button>
+  <nav class="hud" id="hud" aria-label="Presentation controls">
+    <button id="prev" class="nav-button" aria-label="Previous slide">‹</button>
+    <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+    <span id="counter">1 / 16</span>
+    <button id="next" class="nav-button" aria-label="Next slide">›</button>
+  </nav>
+
+  <button id="fullscreen" class="fullscreen" aria-label="Toggle fullscreen" title="Fullscreen (F)">⛶</button>
+
   <script src="script.js"></script>
 </body>
 </html>
